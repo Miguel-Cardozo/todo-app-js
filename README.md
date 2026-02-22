@@ -18,7 +18,7 @@ Aplicação de lista de tarefas desenvolvida com **JavaScript puro**, com **CRUD
 
 ## 🌐 Deploy
 Acesse o projeto online:
-COLE_AQUI_SEU_LINK_DO_PAGES
+https://miguel-cardozo.github.io/todo-app-js/
 
 ## 📚 O que eu pratiquei nesse projeto
 - Organização do código por funções (estado, renderização e eventos)
