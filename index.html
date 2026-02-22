@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do App | Miguel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <a class="logo" href="#">Miguel<span>Dev</span></a>
+      <a class="btn btn-outline" href="https://github.com/Miguel-Cardozo" target="_blank">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>To-Do App (CRUD)</h1>
+        <p class="muted">
+          Gerencie tarefas com filtros e salvamento automático no navegador (LocalStorage).
+        </p>
+
+        <form id="taskForm" class="form">
+          <input id="taskInput" type="text" placeholder="Digite uma tarefa..." maxlength="80" />
+          <button class="btn" type="submit">Adicionar</button>
+        </form>
+
+        <div class="toolbar">
+          <div class="filters">
+            <button class="chip active" data-filter="all">Todas</button>
+            <button class="chip" data-filter="active">Pendentes</button>
+            <button class="chip" data-filter="done">Concluídas</button>
+          </div>
+
+          <button id="clearDone" class="btn btn-outline">Limpar concluídas</button>
+        </div>
+
+        <p class="small muted" id="stats">0 tarefas</p>
+      </div>
+
+      <div class="hero-card">
+        <h2>Dicas</h2>
+        <ul class="list">
+          <li>✔ Clique na tarefa para concluir</li>
+          <li>✏️ Use “Editar” para renomear</li>
+          <li>🗑 Exclua quando quiser</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Minhas tarefas</h2>
+      <div id="taskList" class="grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Miguel Cardozo — Projeto B (JavaScript).</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
